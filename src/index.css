@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    display: border-box;
+    
 }
+body{
+    background-color: #FAF3DD;
+}
+.Nav{
+    width: 100%;
+    height: 80px;
+    background-color: #4A7C59;
+    color: #FAF3DD;
+    justify-content: center;
+    display: flex;
+}
+.Title{
+    font-size: 60px;
+}
+.input--container{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    width: 260px;
+    height: 35px;
+    border-radius: 18px;
+    margin: 20px 50px;
+    padding-left: 10px;
+    border: 3px solid #4A7C59;
+    background-color: #FAF3DD;
+    
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+::placeholder{
+    color: #4A7C59;
+}
+.button--container{
+    display: flex;
+    justify-content: center;
+}
+.submit{
+    width: 1040px;
+    height: 45px;
+    border-radius: 18px;
+    border: 3px solid #FAF3DD; 
+    background-color:#4A7C59 ;
+    color: #FAF3DD;
+    font-size: 28px;
+}
+.results--container{
+    display: flex;
+    justify-content: center;
+}
+.results{
+    width: 380px;
+    background-color: #4A7C59;
+    height: 400px;
+    margin: 20px 40px;
+    border-radius: 18px;
+}
+.results{
+    padding: 10px 10px;
+    color: #FAF3DD;
+    text-align: center;
 }
