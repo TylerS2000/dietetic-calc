@@ -64,3 +64,11 @@ body{
     color: #FAF3DD;
     text-align: center;
 }
+.check--container{
+    width: 60%;
+    height: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
