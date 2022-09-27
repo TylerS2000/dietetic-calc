@@ -72,3 +72,17 @@ body{
     margin-right: auto;
     justify-content: center;
 }
+footer{
+    text-align: center;
+    vertical-align: center;
+    background-color: #4A7C59;
+    height:60px;
+    width: 100%;
+    margin-top: 40px;
+}
+footer > p{
+    color: #FAF3DD;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: large;
+}

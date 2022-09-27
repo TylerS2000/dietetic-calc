@@ -25,8 +25,10 @@ export default function Calc(){
         let bw = "IBW"
         
        
-        if(gen==="m"){idealWtVal = 50 + 1.9*(wtVal-60);}
-        else if(gen==="f"){idealWtVal = 50 + 1.7*(wtVal-60);}
+        if(gen==="m"){idealWtVal = (106 + 6*(htVal-60))/2.2;}
+        else if(gen==="f"){idealWtVal = (100 + 5*(htVal-60))/2.2;}
+        idealWtVal=(Math.round(idealWtVal * 10) / 10 )
+        console.log(idealWtVal)
         if(BMI<19){kcal1 =30; kcal2=35;range1 = kcal1 * wtVal; range2 = kcal2 * wtVal;}
             else if(BMI>=19 && BMI <= 25){kcal1 =25; kcal2=30;range1 = kcal1 * wtVal; range2 = kcal2 * wtVal;}
                 else if(BMI>25 && BMI <30){kcal1 =20; kcal2=25;range1 = kcal1 * wtVal; range2 = kcal2 * wtVal;}
@@ -43,11 +45,12 @@ export default function Calc(){
                 else if(BMI>25 && BMI <30){pro1+=1.4;  pro2+=1.6;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
                     else if(BMI>=30 && BMI <40){pro1+=1.2; pro2+=1.4;range1p = pro1 * idealWtVal; range2p = kcal2 * idealWtVal;}
                             else if(BMI>=40 && BMI <50){pro1+=1.8; pro2+=2;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
-                                else if(BMI >= 50){pro1+=1.8;pro1 = (Math.round(pro1 * 10) / 10 ); pro2+=2;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
+                                else if(BMI >= 50){pro1+=1.8; pro2+=2;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
         
         pro1 = (Math.round(pro1 * 10) / 10 );
-        pro2 = (Math.round(pro2 * 10) / 10 );                  
-        setFinal2(`${Math.round(range1p)}-${Math.round(range2p)}g(${pro1}-${pro2}g/kg ${wtVal}kg ${bw})`)
+        pro2 = (Math.round(pro2 * 10) / 10 );   
+                       
+        setFinal2(`${Math.round(range1p)}-${Math.round(range2p)}g(${pro1}-${pro2}g/kg ${BMI>25?idealWtVal:wtVal}kg ${bw})`)
         setFinal3(`${range1}-${range2}ml`)
     }
         
