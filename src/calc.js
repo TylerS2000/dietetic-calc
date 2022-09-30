@@ -43,7 +43,7 @@ export default function Calc(){
        if(BMI<19){bw ="ABW"; pro1 +=1.4;; pro2+=1.6; range1p = pro1 * wtVal; range2p = pro2 * wtVal;}
             else if(BMI>=19 && BMI <= 25){bw = "ABW"; pro1 += 1.0; pro2+=1.2;range1p = pro1 * wtVal; range2p = pro2 * wtVal;}
                 else if(BMI>25 && BMI <30){pro1+=1.4;  pro2+=1.6;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
-                    else if(BMI>=30 && BMI <40){pro1+=1.2; pro2+=1.4;range1p = pro1 * idealWtVal; range2p = kcal2 * idealWtVal;}
+                    else if(BMI>=30 && BMI <40){pro1+=1.2; pro2+=1.4;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
                             else if(BMI>=40 && BMI <50){pro1+=1.8; pro2+=2;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
                                 else if(BMI >= 50){pro1+=1.8; pro2+=2;range1p = pro1 * idealWtVal; range2p = pro2 * idealWtVal;}
         
