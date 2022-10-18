@@ -51,7 +51,7 @@ export default function Calc(){
         pro2 = (Math.round(pro2 * 10) / 10 );   
                        
         setFinal2(`${Math.round(range1p)}-${Math.round(range2p)}g(${pro1}-${pro2}g/kg ${BMI>25?idealWtVal:wtVal}kg ${bw})`)
-        setFinal3(`${range1}-${range2}ml`)
+        setFinal3(`${Math.round(range1)}-${Math.round(range2)}ml`)
     }
         
      
